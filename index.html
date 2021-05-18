@@ -4,37 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>eCalculator</title>
+    <title></title>
     <link href="./styles.css" rel="stylesheet" />
     <script src="./script.js" defer></script>
   </head>
   <body>
     <!-- use grid -->
     <div class="container">
-      <div class="output">
-        <div data-previous-result class="previous-result"></div>
-        <div data-current-result class="current-result"></div>
+      <div class="display">
+        <input type="text" class="output" value="" disabled />
       </div>
-      <button data-clear>AC</button>
-      <button data-delete="">C</button>
-      <button data-operation>÷</button>
-      <button data-operation>%</button>
-      <button data-digit>1</button>
-      <button data-digit>2</button>
-      <button data-digit>3</button>
-      <button data-operation>*</button>
-      <button data-digit>4</button>
-      <button data-digit>5</button>
-      <button data-digit>6</button>
-      <button data-operation>+</button>
-      <button data-digit>7</button>
-      <button data-digit>8</button>
-      <button data-digit>9</button>
-      <button data-digit>0</button>
-      <button data-operation>-</button>
-      <button data-operation>.</button>
-      <button data-equals class="span-two">=</button>
-      </div>
+      <button data-operation-type class="delete-all" value="delete-all">
+        AC
+      </button>
+      <button data-operation-type class="delete" value="delete">C</button>
+      <button data-operation-type class="operation" value="/">÷</button>
+      <button data-operand-type class="digit button" value="1">1</button>
+      <button data-operand-type class="digit button" value="2">2</button>
+      <button data-operand-type class="digit" value="3">3</button>
+      <button data-operation-type class="operation" value="*">*</button>
+      <button data-operand-type class="digit" value="4">4</button>
+      <button data-operand-type class="digit" value="5">5</button>
+      <button data-operand-type class="digit" value="6">6</button>
+      <button data-operation-type class="operation" value="+">+</button>
+      <button data-operand-type class="digit" value="7">7</button>
+      <button data-operand-type class="digit" value="8">8</button>
+      <button data-operand-type class="digit" value="9">9</button>
+      <button data-operand-type class="digit" value="0">0</button>
+      <button data-operation-type class="operation" value="-">-</button>
+      <button data-operation-type class="operation" value=".">.</button>
+      <button data-equals class="span-two" value="=">=</button>
     </div>
   </body>
 </html>
