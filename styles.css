@@ -9,11 +9,10 @@
 body {
   padding: 0;
   margin: 0;
-  background: orange;
+  background: #ff0000;
 }
 
 .container {
-  background: blue;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -26,18 +25,20 @@ body {
 .container > button {
   cursor: pointer;
   font-size: 1rem;
-  border: 1px solid grey;
-  outline: none;
-  background-color: green;
+  border: 1px lightgrey;
+  outline: grey;
+  background-color: whitesmoke;
   border-style: groove;
   border-color: black;
 }
 
 .output {
-  font-size: 0.5rem;
-  
-  /* border: 1px solid grey; */
-  /* outline: none; */
+  display: flex;
+  font-size: 1rem;
+  background-color: pink;
+  align-content: flex-end;
+  justify-content: flex-end;
+
   /* background-color: green; */
   /* border-style: groove; */
   /* border-color: black; */
@@ -52,7 +53,7 @@ body {
 
 .display {
   grid-column: 1 / -1;
-  background-color: gray;
+  background-color: pink;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;

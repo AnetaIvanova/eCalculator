@@ -24,7 +24,7 @@ function inputDigit(digit) {
 //fix the decimal point
 function inputDecimal(dot) {
   if (ecalculator.onNextInput === true) {
-    ecalculator.displayInput = "0.";
+    ecalculator.displayInput = "0";
     ecalculator.onNextInput = false;
     return;
   }
@@ -52,7 +52,6 @@ function handleOperator(nextOperator) {
     ecalculator.displayInput = `${parseFloat(result.toFixed(7))}`;
     ecalculator.firstInput = result;
   }
-
   ecalculator.onNextInput = true;
   ecalculator.operation = nextOperator;
 }
@@ -82,18 +81,9 @@ function resetEcalculator() {
 //update display
 function updateDisplay() {
   const display = document.querySelector(".output");
-  display.value = ecalculator.inputValue;
+  display.value = ecalculator.displayInput;
 }
 updateDisplay();
-
-//add event listeners to the calculator buttons
-// const keys = [
-//   document.querySelectorAll(".operation"),
-//   document.querySelectorAll(".digit"),
-//   document.querySelector(".delete-all"),
-//   document.querySelector(".span-two"),
-//   document.querySelector(".delete"),
-// ];
 
 const keys = document.querySelectorAll(".button");
 console.log(keys);
@@ -106,8 +96,6 @@ keys.forEach((key) => {
       return;
     }
 
-    alert("calculate");
-
     switch (value) {
       case "+":
       case "-":
@@ -119,14 +107,12 @@ keys.forEach((key) => {
       case ".":
         inputDecimal(value);
         break;
-      case "delete-all":
+      case "delete-all button":
         resetCalculator();
         break;
       default:
         // check if the key is an integer
-        if (Number.isInteger(parseFloat(value))) {
-          inputDigit(value);
-        }
+        inputDigit(value);
     }
     updateDisplay();
   });

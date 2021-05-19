@@ -4,14 +4,14 @@
 
 Project: "eCalculator"
 Author: Aneta Ivanova (anetai@protonmail.com)
-Version: 1.0.1
-Date: May 18 2021
+Version: 1.0.2
+Date: May 19 2021
 
 Project website: https://github.com/AnetaIvanova/eCalculator
 
 //////////////////////////////////////////////////////////////////////////////
 
-eCalculator v 1.0.0
+eCalculator v 1.0.2
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -28,7 +28,7 @@ The following technologies are used:
 #JavaScript - to perform the logic of the user's operations when using the calculator.
 #VSCode 1.56.2 on MacOs 64bit.
 
-Run the "Calculator":
+Run the "eCalculator":
 
 #Download the 3 files of code.
 #Open the index.html file in your browser and run it.
