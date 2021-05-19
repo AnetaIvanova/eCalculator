@@ -4,14 +4,14 @@
 
 Project: "eCalculator"
 Author: Aneta Ivanova (anetai@protonmail.com)
-Version: 1.0.2
-Date: May 19 2021
+Version: 1.0.3
+Date: May 20 2021
 
 Project website: https://github.com/AnetaIvanova/eCalculator
 
 //////////////////////////////////////////////////////////////////////////////
 
-eCalculator v 1.0.2
+eCalculator v 1.0.3
 
 //////////////////////////////////////////////////////////////////////////////
 

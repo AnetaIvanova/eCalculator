@@ -1,15 +1,43 @@
+/* Adding styles to the calculator*/
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: normal;
+  box-sizing: border-box;
 }
 
 body {
   padding: 0;
   margin: 0;
-  background: #ff0000;
+  background-image: url("https://images.unsplash.com/photo-1569605803663-e9337d901ff9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80");
+}
+
+h2 {
+  text-align: center;
+  color: #a9a9a9;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .container {
@@ -20,32 +48,30 @@ body {
   grid-template-columns: repeat(4, 100px);
   grid-template-rows: min-max(120px, auto) repeat(5, 100px);
   border-style: groove;
+  margin-top: 60px;
+  margin-left: 120px;
+  margin-right: 120px;
+  border-radius: 25px;
 }
 
 .container > button {
   cursor: pointer;
+  padding: 10px;
   font-size: 1rem;
-  border: 1px lightgrey;
-  outline: grey;
-  background-color: whitesmoke;
-  border-style: groove;
-  border-color: black;
+  background-color: lightgray;
+  border-style: solid;
+  border-color: darkgray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
 }
 
 .output {
   display: flex;
   font-size: 1rem;
-  background-color: pink;
+  background-color: lightgray;
   align-content: flex-end;
   justify-content: flex-end;
-
-  /* background-color: green; */
-  /* border-style: groove; */
-  /* border-color: black; */
 }
-/* .display :hover {
-  background-color: orange;
-} */
 
 .span-two {
   grid-column: span 2;
@@ -53,7 +79,7 @@ body {
 
 .display {
   grid-column: 1 / -1;
-  background-color: pink;
+  background-color: #d3d3d3;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -61,43 +87,70 @@ body {
   padding: 10px;
   word-wrap: break-word;
   word-break: break-all;
-  min-height: 10vh;
-  border-style: groove, solid black;
+  min-height: 15vh;
+  border-style: solid;
+  border-color: darkgray;
+  border-radius: 10px;
+  margin-top: 2px;
 }
 
-/* Mobile first approach style  */
-
-/* Larger than mobile */
+/* Mobile first approach style */
+/* 1. Larger than mobile */
 @media (min-width: 400px) {
   .container {
-    background: red;
+    font-weight: lighter;
+  }
+
+  .container > button {
+    font-weight: lighter;
+  }
+
+  .display {
+    font-weight: lighter;
+  }
+
+  .output {
+    font-weight: lighter;
   }
 }
 
-/* Larger than tablet (also point when grid becomes active) */
+/* 2. Larger than tablet (also point when grid becomes active) */
 @media (min-width: 550px) {
   .container {
-    background: green;
+    font-weight: lighter;
+    background-color: #ffffff;
+  }
+
+  .container > button {
+    font-weight: lighter;
+  }
+
+  .display {
+    font-weight: lighter;
+  }
+
+  .output {
+    font-weight: lighter;
   }
 }
 
-/* Larger than tablet */
+/* 3. Larger than tablet */
 @media (min-width: 750px) {
   .container {
-    background: pink;
+    background: #f5f5f5;
   }
 }
 
-/* Larger than desktop */
+/* 4. Larger than desktop */
 @media (min-width: 1000px) {
   .container {
-    background: white;
+    background: #f5f5f5;
   }
 }
 
-/* Larger than Desktop HD */
+/* 5. Larger than Desktop HD */
 @media (min-width: 1200px) {
   .container {
-    background: greenyellow;
+    background: #f5f5f5;
   }
 }

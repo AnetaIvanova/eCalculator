@@ -1,12 +1,12 @@
-// create the object for eCalculator
+// create an object for the eCalculator
 const ecalculator = {
-  displayInput: "0", //the current input
+  displayInput: "", //the current input
   firstInput: null, //the previous input
   onNextInput: false, // checks if there are both previous and current inputs
   operation: null, //store the operation for expression
 };
 
-// define the methods for the calculator object:
+/*define the methods for the calculator object:*/
 
 //change the display value when the user clicks a different button
 function inputDigit(digit) {
@@ -17,14 +17,14 @@ function inputDigit(digit) {
     ecalculator.onNextInput = false;
   } else {
     ecalculator.displayInput =
-      displayInput === "0" ? digit : displayInput + digit;
+      displayInput === "" ? digit : displayInput + digit;
   }
 }
 
 //fix the decimal point
 function inputDecimal(dot) {
   if (ecalculator.onNextInput === true) {
-    ecalculator.displayInput = "0";
+    ecalculator.displayInput = "";
     ecalculator.onNextInput = false;
     return;
   }
@@ -72,7 +72,7 @@ function calculate(firstInput, secondInput, operation) {
 
 //reset the calculator
 function resetEcalculator() {
-  ecalculator.displayInput = "0";
+  ecalculator.displayInput = "";
   ecalculator.firstInput = null;
   ecalculator.onNextInput = false;
   ecalculator.operation = null;
@@ -111,8 +111,7 @@ keys.forEach((key) => {
         resetCalculator();
         break;
       default:
-        // check if the key is an integer
-        inputDigit(value);
+        inputDigit(value); // check if the key is an integer
     }
     updateDisplay();
   });
