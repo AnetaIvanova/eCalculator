@@ -24,8 +24,11 @@ Description:
 The following technologies are used:
 
 #HTML - to build the structure of the program.
+
 #CSS - to add styles to the program display.
+
 #JavaScript - to perform the logic of the user's operations when using the calculator.
+
 #VSCode 1.56.2 on MacOs 64bit.
 
 Run the "eCalculator":
