@@ -28,7 +28,7 @@ The following technologies are used:
 #JavaScript - to perform the logic of the user's operations when using the calculator.
 #VSCode 1.56.2 on MacOs 64bit.
 
-Run the "eCalculator":
+How to run the "eCalculator":
 
 #Download the 3 files of code.
 #Open the index.html file in your browser and run it.
