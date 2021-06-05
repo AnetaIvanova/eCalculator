@@ -17,7 +17,7 @@ eCalculator v 1.0.4
 
 Description:
 
-"eCalculator" is a computational program, performing simple mathematical operations like any basic calculator. The program is written in Java Script, HTML and CSS.
+"eCalculator" is a computational program performing simple mathematical operations like any basic calculator. The program is written in Java Script, HTML and CSS.
 
 //////////////////////////////////////////////////////////////////////////////
 
