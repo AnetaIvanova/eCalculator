@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCalculator</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="header">My eCalculator</h2>
+      <div class="display">
+        <input type="text" class="output" value="" disabled />
+      </div>
+      <button data-operation-type class="delete-all button" value="">AC</button>
+      <button data-operation-type class="span-two delete button" value="">
+        C
+      </button>
+      <button data-operation-type class="operation button" value="/">÷</button>
+      <button data-operand-type class="digit button" value="1">1</button>
+      <button data-operand-type class="digit button" value="2">2</button>
+      <button data-operand-type class="digit button" value="3">3</button>
+      <button data-operation-type class="operation button" value="*">*</button>
+      <button data-operand-type class="digit button" value="4">4</button>
+      <button data-operand-type class="digit button five" value="5">5</button>
+      <button data-operand-type class="digit button" value="6">6</button>
+      <button data-operation-type class="operation button add" value="+">
+        +
+      </button>
+      <button data-operand-type class="digit button" value="7">7</button>
+      <button data-operand-type class="digit button" value="8">8</button>
+      <button data-operand-type class="digit button" value="9">9</button>
+      <button data-operation-type class="operation button" value="-">-</button>
+      <button data-operand-type class="span-two digit button" value="0">
+        0
+      </button>
+      <button data-operation-type class="operation button" value=".">.</button>
+      <button data-equals class="operation button" value="=">=</button>
+    </div>
+  </body>
+</html>
