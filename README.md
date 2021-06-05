@@ -21,7 +21,7 @@ Description:
 
 //////////////////////////////////////////////////////////////////////////////
 
-The following technologies are used:
+The following technologies were used:
 
 #HTML - to build the structure of the program.
 #CSS - to add styles to the program display.
