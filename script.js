@@ -114,7 +114,7 @@ keys.forEach((key) => {
         resetCalculator();
         break;
       default:
-        inputDigit(value); // check if the key is an integer
+        inputDigit(value);
     }
     updateDisplay();
   });
