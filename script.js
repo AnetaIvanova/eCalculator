@@ -114,7 +114,7 @@ keys.forEach((key) => {
         resetCalculator();
         break;
       default:
-        inputDigit(value);
+        inputDigit(value); //
     }
     updateDisplay();
   });
