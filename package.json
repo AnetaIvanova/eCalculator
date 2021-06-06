@@ -7,8 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "e2e": "cypress open"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ https://github.com/AnetaIvanova/eCalculator.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnetaIvanova/eCalculator/issues"
+  },
+  "homepage": "https://github.com/AnetaIvanova/eCalculator/#readme",
   "devDependencies": {
     "cypress": "^7.4.0"
   }
