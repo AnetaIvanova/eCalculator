@@ -17,12 +17,3 @@ describe("Addition operator", () => {
     cy.get(".span-two button").click();
   });
 });
-
-// describe("Addition operator", () => {
-//     it("Should equal 10", () => {
-//       cy.get(".digit button five").click();
-//       cy.get(".operation button add").click();
-//       cy.get(".digit button five").click();
-//       cy.get(".span-two button").contains("10");
-//     });
-//   });
